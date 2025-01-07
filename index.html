@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta información básica -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título de la página -->
   <title>Cohorte 17 - Fullstack Developers</title>
+  
+  <!-- Enlace al archivo CSS -->
   <link rel="stylesheet" href="css.css">
 </head>
 <body>
+  <!-- Encabezado principal (header) -->
   <header>
+    <!-- Se puede agregar un logo o navegación aquí -->
   </header>
-  <section id="cta">
-    <h1>¡Full Stack <span class="travel">Developers!</span></h1>
+
+  <!-- Sección de llamada a la acción (CTA) -->
+  <section id="cta" aria-labelledby="cta-heading">
+    <!-- Título principal de la página -->
+    <h1 id="cta-heading">¡Full Stack <span class="travel">Developers!</span></h1>
+    
+    <!-- Subtítulo para reforzar el mensaje -->
     <h2>Únete a nuestro equipo</h2>
+    
+    <!-- Descripción adicional -->
     <p>La comunidad de desarrolladores Full Stack Developers!</p>
-    <button id="cta-form">¡Quiero saber más!</button>
+    
+    <!-- Botón para más información -->
+    <button id="cta-form" aria-controls="form">¡Quiero saber más!</button>
   </section>
-  <section id="form">
-    <h2>Contáctanos para obtener más información sobre nuestra comunidad</h2>
+
+  <!-- Formulario de contacto -->
+  <section id="form" aria-labelledby="form-heading">
+    <h2 id="form-heading">Contáctanos para obtener más información sobre nuestra comunidad</h2>
+    
+    <!-- Formulario estructurado -->
     <form>
+      <!-- Campo de nombre -->
       <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+      
+      <!-- Campo de correo electrónico -->
       <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+      
+      <!-- Campo de mensaje -->
       <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+      
+      <!-- Botón para enviar -->
       <button type="button" onclick="presionarBoton()">Enviar</button>
     </form>
   </section>
+
+  <!-- Pie de página (footer) -->
   <footer>
     <p>&copy; 2024 FullStack Developers. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Archivo de script JavaScript -->
   <script src="accion.js"></script>
 </body>
 </html>
